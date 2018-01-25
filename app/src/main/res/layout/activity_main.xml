@@ -5,9 +5,14 @@
     android:layout_height="match_parent"
     tools:context="com.udacity.sandwichclub.MainActivity">
 
-    <ListView
-        android:id="@+id/sandwiches_listview"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
+        <ListView
+            android:id="@+id/sandwiches_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
 </RelativeLayout>
