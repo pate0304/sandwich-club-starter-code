@@ -4,8 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -82,9 +80,9 @@ public class DetailActivity extends AppCompatActivity {
 //        if (sandwich.getAlsoKnownAs().equals("")) {
 //            mOrigin.setVisibility(View.GONE);     /} else {
 
-        List<String> listAlsoKnownAs  = sandwich.getAlsoKnownAs();
-        for(int i=0;i<listAlsoKnownAs.size();i++){
-            mAlsoKnownAs.append(listAlsoKnownAs.get(i)+" ");
+        List<String> listAlsoKnownAs = sandwich.getAlsoKnownAs();
+        for (int i = 0; i < listAlsoKnownAs.size(); i++) {
+            mAlsoKnownAs.append(listAlsoKnownAs.get(i) + " ");
         }
         mOrigin.setText(sandwich.getPlaceOfOrigin());
         mDescription.setText(sandwich.getDescription());

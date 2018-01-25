@@ -1,7 +1,5 @@
 package com.udacity.sandwichclub.utils;
 
-import android.util.Log;
-
 import com.udacity.sandwichclub.model.Sandwich;
 
 import org.json.JSONArray;
@@ -44,12 +42,13 @@ public class JsonUtils {
 
     /**
      * Method to convert JSONArray to Java String ArrayList
+     *
      * @param jsonArray
      * @return
      */
-    public static List<String> JSONArraytoListArray(JSONArray jsonArray){
-        List<String> tempList  = new ArrayList<>();
-        for(int i=0;i<jsonArray.length();i++){
+    public static List<String> JSONArraytoListArray(JSONArray jsonArray) {
+        List<String> tempList = new ArrayList<>();
+        for (int i = 0; i < jsonArray.length(); i++) {
             try {
                 tempList.add(jsonArray.getString(i));
             } catch (JSONException e) {
